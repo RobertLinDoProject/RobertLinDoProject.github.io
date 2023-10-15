@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(208, 208, 208);
+}
+body .container {
+  display: flex;
+  width: 80vw;
+}
+body .container .panel {
+  flex: 0.5;
+  cursor: pointer;
+  border-radius: 50px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+body .container .panel.active {
+  flex: 5;
+}
+body .container .filter {
+  background-color: rgba(0, 0, 0, 0.74);
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+}
+body .container h1 {
+  font-size: 35px;
+  text-shadow: 2px 1px rgba(13, 13, 181, 0.77);
+  position: absolute;
+  top: 30px;
+  color: rgb(255, 255, 255);
+  left: 30px;
+  opacity: 0;
+}
+body .container h3.temp {
+  font-size: 100px;
+  text-shadow: 2px 1px rgb(207, 22, 22);
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  position: absolute;
+  top: 80px;
+  left: 50px;
+}
+body .container h3.temp_max {
+  font-size: 25px;
+  text-shadow: 2px 1px rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.898);
+  opacity: 0;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+}
+body .container h3.temp_min {
+  font-size: 25px;
+  text-shadow: 2px 1px rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.898);
+  opacity: 0;
+  position: absolute;
+  top: 120px;
+  right: 30px;
+}
+body .container h3.feels_like {
+  font-size: 25px;
+  text-shadow: 2px 1px rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.898);
+  opacity: 0;
+  position: absolute;
+  top: 190px;
+  right: 30px;
+}
+body .container h3.description {
+  font-size: 40px;
+  text-shadow: 3px 2px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+}
+body .container h3.clouds {
+  font-size: 25px;
+  text-shadow: 2px 1px rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.602);
+  opacity: 0;
+  position: absolute;
+  left: 50px;
+  bottom: 200px;
+}
+body .container h3.visibility {
+  font-size: 25px;
+  text-shadow: 2px 1px rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.602);
+  opacity: 0;
+  position: absolute;
+  left: 50px;
+  bottom: 150px;
+}
+body .container h3.humidity {
+  font-size: 25px;
+  text-shadow: 2px 1px rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.602);
+  opacity: 0;
+  position: absolute;
+  left: 50px;
+  bottom: 100px;
+}
+body .container h3.rain {
+  font-size: 25px;
+  text-shadow: 2px 1px rgba(0, 135, 61, 0.634);
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+body .container h3.speed {
+  font-size: 25px;
+  text-shadow: 2px 1px rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.602);
+  opacity: 0;
+  position: absolute;
+  bottom: 200px;
+  right: 50px;
+}
+body .container h3.deg {
+  font-size: 25px;
+  text-shadow: 2px 1px rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.602);
+  opacity: 0;
+  position: absolute;
+  bottom: 150px;
+  right: 50px;
+}
+body .container h3.pressure {
+  font-size: 25px;
+  text-shadow: 2px 1px rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.602);
+  opacity: 0;
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+}
+body .container .panel.active h1,
+body .container .panel.active h3,
+body .container .panel.active .filter {
+  opacity: 1;
+  transition: opacity 1s ease-in 0.8s;
+}
+body .container #Taipei {
+  background-image: url("https://images.unsplash.com/photo-1470004914212-05527e49370b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80");
+}
+body .container #NewYork {
+  background-image: url("https://images.unsplash.com/photo-1543788303-c15e49305bc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80");
+}
+body .container #Tokyo {
+  background-image: url("https://images.unsplash.com/photo-1551322120-c697cf88fbdc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2938&q=80");
+}
+body .container #Paris {
+  background-image: url("https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2823&q=80");
+}
+body .container #Sydney {
+  background-image: url("https://images.unsplash.com/photo-1523428096881-5bd79d043006?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80");
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
