@@ -133,6 +133,85 @@ button {
   cursor: pointer;
 }
 
+.button01:hover button > svg > path {
+  fill: #0057d0;
+}
+.button01:hover span {
+  color: #0057d0;
+}
+
+.button02:hover button > svg > path {
+  stroke: #0057d0;
+}
+.button02:hover button > svg > .svg02-path02 {
+  fill: #0057d0;
+}
+.button02:hover span {
+  color: #0057d0;
+}
+
+.button03:hover button > svg > path {
+  stroke: #0057d0;
+}
+.button03:hover span {
+  color: #0057d0;
+}
+
+.button04:hover button > svg > path {
+  stroke: #0057d0;
+}
+.button04:hover button > svg > .svg04-path02 {
+  fill: #0057d0;
+}
+.button04:hover button > svg > .svg04-path03 {
+  fill: #0057d0;
+}
+.button04:hover span {
+  color: #0057d0;
+}
+
+.button05:hover button > svg > path {
+  fill: #0057d0;
+}
+.button05:hover span {
+  color: #0057d0;
+}
+
+.button06:hover button > svg > path {
+  stroke: #0057d0;
+}
+.button06:hover span {
+  color: #0057d0;
+}
+
+/* button > svg:hover path {
+  stroke: #0057d0;
+}
+
+.button01:hover span {
+  color: #0057d0;
+}
+
+.button02:hover button > svg .svg02-path02 {
+  fill: #0057d0;
+}
+
+.button04 > button > svg:hover .svg04-path02 {
+  fill: #0057d0;
+}
+
+.button04 > button > svg:hover .svg04-path03 {
+  fill: #0057d0;
+}
+
+.svg01:hover path {
+  fill: #0057d0;
+}
+
+.svg05:hover path {
+  fill: #0057d0;
+} */
+
 #svg {
   height: 5vh;
   width: 5vw;
