@@ -131,6 +131,7 @@ span {
 button {
   border: none;
   cursor: pointer;
+  background: none;
 }
 
 .button01:hover button > svg > path {
