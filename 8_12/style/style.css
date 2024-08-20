@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(125deg, #7d8ab8 -1%, #354775 99%);
+}
+.container {
+  position: absolute;
+  background-color: #efefef;
+  height: auto;
+  height: 97vh;
+  width: 95vw;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.layout01 {
+  padding: 28px 23px;
+}
+.img-bee {
+  vertical-align: middle;
+}
+.vector01 {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  left: 5px;
+  width: 2px;
+  height: 24px;
+  background-color: #4f6483;
+}
+.WB {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  height: 24px;
+  left: 9px;
+  bottom: 4px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.top-right {
+  display: inline-block;
+}
+
+.green-light {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 1304px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #04df00;
+}
+.time {
+  display: inline-block;
+  position: relative;
+  left: 9px;
+  vertical-align: middle;
+  height: 29px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000c1d;
+}
+
+.wifi-signal {
+  /* vertical-align: middle; */
+  position: relative;
+  top: 4px;
+  left: 16px;
+}
+
+span {
+  position: relative;
+  left: 71px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #324258;
+}
+
+.layout02 {
+  position: relative;
+  top: 25px;
+  height: 69vh;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+}
+.layout03 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 20px 0 0 0;
+}
+
+.Vector-239 {
+  width: 95vw;
+  height: 2px;
+  background-color: #8793a5;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+#svg {
+  height: 5vh;
+  width: 5vw;
+}
+
+#label {
+  top: 0.5rem;
+  left: 0;
+  font-size: 1rem;
+}
+
+#button {
+  margin: 0 45px;
+  align-items: center;
+}
+
+.button01 {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.button02 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.button03 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.button04 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.button05 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.button06 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  height: 4vh;
+  background-color: #d7dbe6;
+}
+.title01 {
+  font-size: 16px;
+}
+.title02 {
+  position: relative;
+  left: 300px;
+  font-size: 16px;
+}
+.title03 {
+  position: relative;
+  left: 828px;
+  font-size: 16px;
+}
+
+@media (max-width: 1450px) {
+  .green-light {
+    margin: 0 0 0 880px;
+  }
+
+  .layout03 {
+    margin: 25px 0 0 0;
+  }
+}
+
+@media (max-width: 940px) {
+  .top-right {
+    display: block;
+  }
+  .green-light {
+    margin: 0 0 0 10px;
+  }
+  .title01 {
+    font-size: 15px;
+    left: 0rem;
+  }
+  .title02 {
+    font-size: 15px;
+    left: 3.5rem;
+  }
+  .title03 {
+    font-size: 15px;
+    left: 5.7rem;
+  }
+
+  .layout03 {
+    margin: 15px 0 0 0;
+  }
+
+  #svg {
+    height: 6vh;
+    width: 6vw;
+  }
+
+  #label {
+    top: 0.1rem;
+    left: 0;
+    font-size: 0.56rem;
+  }
+
+  #button {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 940px), (max-height: 440px) {
+  .time {
+    font-size: 21px;
+  }
+  .wifi-signal {
+    left: 10px;
+    bottom: 5px;
+  }
+  .title > span {
+    font-size: 10px;
+  }
+  .layout02 {
+    height: 65vh;
+  }
+
+  #svg {
+    height: 6vh;
+    width: 7vw;
+  }
+  #label {
+    top: 0.1rem;
+    left: 0;
+    font-size: 0.45rem;
+  }
+}
